@@ -1,0 +1,13 @@
+./build
+build/*
+test-chain-1/trie/*
+test-chain-1/blockchain/*
+
+test-chain-2/trie/*
+test-chain-2/blockchain/*
+
+test-chain-3/trie/*
+test-chain-3/blockchain/*
+
+test-chain-4/trie/*
+test-chain-4/blockchain/*

@@ -1,0 +1,48 @@
+{
+    "name": "polygon-edge",
+    "genesis": {
+        "nonce": "0x0000000000000000",
+        "timestamp": "0x0",
+        "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f90127f90120f846947df1429e07b156e42d589f52b49b09c48854b375b0931fcf5f42a5ac050f1c68341044e472f53b1c75e83bf0d0991d80d57a711fd52dd7a5a83ce48e08f6c6ac4d61effd77f8469426bfdaa8d340b879219727f036981fedae947518b08b292d17f997b7faa71d3d444c7c7a3e7943c114c09d23fdde21f4f4560c8e1c9f75d59e58ac08f80d30e24e21f01395f84694c3c9b52da38a2dd3d25842b8764c8df5112fcf5fb0953adfed44d31e3007938a4058586af635e0d4302ef1a33cdbe1c24c060e97fa10f2c85dd5524ad9405758dbbc3e1aeaf84694f69d5ad08704445d9f42ef4d9189ea3a8eaf2927b0a050822ddc27eb09fe291d472698c25c31d14b0eb688249e17a521d6b061b6815107af0529609bd3c32078922114e15180c28080",
+        "gasLimit": "0x500000",
+        "difficulty": "0x1",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {
+            "0x6a04fbD9d3aA25F92e78e1f74F0d6060e0e0ee32": {
+                "balance": "0x3635c9adc5dea00000"
+            },
+            "0x7DF1429E07b156E42d589f52B49b09c48854b375": {
+                "balance": "0x3635c9adc5dea00000"
+            }
+        },
+        "number": "0x0",
+        "gasUsed": "0x70000",
+        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "params": {
+        "forks": {
+            "homestead": 0,
+            "byzantium": 0,
+            "constantinople": 0,
+            "petersburg": 0,
+            "istanbul": 0,
+            "EIP150": 0,
+            "EIP158": 0,
+            "EIP155": 0
+        },
+        "chainID": 100,
+        "engine": {
+            "ibft": {
+                "epochSize": 100000,
+                "type": "PoA",
+                "validator_type": "bls"
+            }
+        },
+        "blockGasTarget": 0
+    },
+    "bootnodes": [
+        "/ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5",
+        "/ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm"
+    ]
+}

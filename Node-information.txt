@@ -1,0 +1,79 @@
+Node 1 information: polygon-edge secrets init --data-dir test-chain-2
+
+[SECRETS INIT]
+Public key (address) = 0x7DF1429E07b156E42d589f52B49b09c48854b375
+BLS Public key       = 0x931fcf5f42a5ac050f1c68341044e472f53b1c75e83bf0d0991d80d57a711fd52dd7a5a83ce48e08f6c6ac4d61effd77
+Node ID              = 16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5
+
+BOOT NODE: /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5
+
+Node 2 information:
+
+[SECRETS INIT]
+Public key (address) = 0x26BFdAA8d340B879219727f036981FedaE947518
+BLS Public key       = 0x8b292d17f997b7faa71d3d444c7c7a3e7943c114c09d23fdde21f4f4560c8e1c9f75d59e58ac08f80d30e24e21f01395
+Node ID              = 16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm
+
+BOOT NODE: /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm
+
+Node 3 information:
+
+[SECRETS INIT]
+Public key (address) = 0xC3c9B52dA38A2DD3D25842B8764C8df5112fCF5f
+BLS Public key       = 0x953adfed44d31e3007938a4058586af635e0d4302ef1a33cdbe1c24c060e97fa10f2c85dd5524ad9405758dbbc3e1aea
+Node ID              = 16Uiu2HAmErGuuZ9Hbu49Dfzaf7U3HNCetszUSs3YiKk5fuRP2Vwj
+
+BOOT NODE: /ip4/127.0.0.1/tcp/30001/p2p/16Uiu2HAmErGuuZ9Hbu49Dfzaf7U3HNCetszUSs3YiKk5fuRP2Vwj16Uiu2HAmErGuuZ9Hbu49Dfzaf7U3HNCetszUSs3YiKk5fuRP2Vwj
+
+Node 4 information:
+
+[SECRETS INIT]
+Public key (address) = 0xF69D5Ad08704445d9f42Ef4d9189EA3a8eAF2927
+BLS Public key       = 0xa050822ddc27eb09fe291d472698c25c31d14b0eb688249e17a521d6b061b6815107af0529609bd3c32078922114e151
+Node ID              = 16Uiu2HAmL7zeK4yw18ekBztfYhGyAxE7iZ9dhiELkRi1uCs62ZxJ
+
+BOOT NODE: /ip4/127.0.0.1/tcp/40001/p2p/16Uiu2HAmL7zeK4yw18ekBztfYhGyAxE7iZ9dhiELkRi1uCs62ZxJ
+
+Node 5 information:
+
+[SECRETS INIT]
+Public key (address) = 0x68fe3626132fa8e768847C432D2c03A784b94806
+BLS Public key       = 0x825a1d3db7840976934aa4d0a64f062c02548df201094b07c576c5338aba39c265dc51a1cd929203b397e89445b71d1a
+Node ID              = 16Uiu2HAmA1WdAnxq5JoZB1u5Nisv15mxZx2wQ44Wd6tYar4GMdTs
+
+BOOT NODE: /ip4/127.0.0.1/tcp/40001/p2p/16Uiu2HAmA1WdAnxq5JoZB1u5Nisv15mxZx2wQ44Wd6tYar4GMdTs
+
+Generating genesis file:
+
+polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5 --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm --premine=0x7DF1429E07b156E42d589f52B49b09c48854b375:1000000000000000000000 --premine=0x6a04fbD9d3aA25F92e78e1f74F0d6060e0e0ee32:1000000000000000000000
+
+
+Run Node 1:
+ polygon-edge server --data-dir ./test-chain-1 --chain genesis.json --grpc-address :10000 --libp2p :10001 --jsonrpc :10002 --seal
+
+Run Node 2:
+ polygon-edge server --data-dir ./test-chain-2 --chain genesis.json --grpc-address :20000 --libp2p :20001 --jsonrpc :20002 --seal
+
+Run Node 3:
+ polygon-edge server --data-dir ./test-chain-3 --chain genesis.json --grpc-address :30000 --libp2p :30001 --jsonrpc :30002 --seal
+
+Run Node 4:
+ polygon-edge server --data-dir ./test-chain-4 --chain genesis.json --grpc-address :40000 --libp2p :40001 --jsonrpc :40002 --seal
+
+Add/remove a validator:
+  polygon-edge ibft propose --grpc-address 127.0.0.1:10000 --addr 0x68fe3626132fa8e768847C432D2c03A784b94806 --bls 0x825a1d3db7840976934aa4d0a64f062c02548df201094b07c576c5338aba39c265dc51a1cd929203b397e89445b71d1a --vote auth
+
+  polygon-edge server --data-dir ./test-chain-5 --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002 --seal
+
+Network stress testing: in Node 1
+ export LOADBOT_0x7DF1429E07b156E42d589f52B49b09c48854b375=220ab472576c149dc3efa6e3598096f9f753e2b8765e5ade21683dbc8840f978
+
+ polygon-edge loadbot --jsonrpc http://127.0.0.1:10002 --grpc-address 127.0.0.1:10000 --sender 0x7DF1429E07b156E42d589f52B49b09c48854b375 --count 2000 --value 0x100 --tps 100
+
+
+Test smart contract:
+  truffle console --network edgechain:
+
+    let instance = await ShipmentContract.deployed()
+    await instance.createShipment(001,"0x26BFdAA8d340B879219727f036981FedaE947518","Dang gui","Sai Gon")
+    await instance.getShipment(001)

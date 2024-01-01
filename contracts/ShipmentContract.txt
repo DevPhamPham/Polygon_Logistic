@@ -1,0 +1,42 @@
+devpham@DESKTOP-6865C8E:/mnt/h/Polygon/demo$ truffle migrate --network edgechain
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/TDTcoin.sol
+> Artifacts written to /mnt/h/Polygon/demo/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.13+commit.abaa5c0e.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'edgechain'
+> Network id:      100
+> Block gas limit: 5242880 (0x500000)
+
+
+1_deploy_contracts.js
+=====================
+
+   Deploying 'ShipmentContract'
+   ----------------------------
+   > transaction hash:    0xc5641185ea0d4baac76247d1bd22db66119e7a8a9346d741fad4c0e83fccf4e3
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x6F5B72447B714066aD8067f8dE0379F7b2661F28
+   > block number:        2094
+   > block timestamp:     1703772691
+   > account:             0xC4b7BE6184960b3d985DDB8BC92B8EfB1BeeF9f5
+   > balance:             1000
+   > gas used:            868120 (0xd3f18)
+   > gas price:           0 gwei
+   > value sent:          0 ETH
+   > total cost:          0 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0 ETH
