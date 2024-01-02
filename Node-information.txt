@@ -1,11 +1,11 @@
 Node 1 information: polygon-edge secrets init --data-dir test-chain-2
 
 [SECRETS INIT]
-Public key (address) = 0x7DF1429E07b156E42d589f52B49b09c48854b375
-BLS Public key       = 0x931fcf5f42a5ac050f1c68341044e472f53b1c75e83bf0d0991d80d57a711fd52dd7a5a83ce48e08f6c6ac4d61effd77
-Node ID              = 16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5
+Public key (address) = 0x4DF117d227396c294412A8269762B9605D4A1055
+BLS Public key       = 0xb1ae276a34c23029c2f4d4c7649598be07ed021319a71aa21d6bb3cf86c95af5f1a2432be766d8d4183214b1609f0d86
+Node ID              = 16Uiu2HAmUt34yGwpdtPznPdsKyYkGZxzsUb4HeZHbE9fXmhZDU4Z
 
-BOOT NODE: /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5
+BOOT NODE: /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmUt34yGwpdtPznPdsKyYkGZxzsUb4HeZHbE9fXmhZDU4Z
 
 Node 2 information:
 
@@ -45,7 +45,7 @@ BOOT NODE: /ip4/127.0.0.1/tcp/40001/p2p/16Uiu2HAmA1WdAnxq5JoZB1u5Nisv15mxZx2wQ44
 
 Generating genesis file:
 
-polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmTMaQToHkJcoq6cvBjwYRGrYzaub1tTBE1139PEdcPrs5 --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm --premine=0x7DF1429E07b156E42d589f52B49b09c48854b375:1000000000000000000000 --premine=0x6a04fbD9d3aA25F92e78e1f74F0d6060e0e0ee32:1000000000000000000000
+polygon-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- --bootnode /ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmUt34yGwpdtPznPdsKyYkGZxzsUb4HeZHbE9fXmhZDU4Z --bootnode /ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAkv6r7FfMdD2xyntac55PVM5kEsYGocFyBtefdPx1Q3fDm --premine=0x4DF117d227396c294412A8269762B9605D4A1055:1000000000000000000000 --premine=0x26BFdAA8d340B879219727f036981FedaE947518:1000000000000000000000
 
 
 Run Node 1:
