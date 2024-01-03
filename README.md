@@ -11,6 +11,7 @@ Nodejs version: @16.0.0 - @18.0.0.
     https://nodejs.org/en/download/
 
 Git(Optional).
+
 Solidity: 0.8.13
 
     npm install -g solc@0.8.13
@@ -323,3 +324,15 @@ Next, access truffle’s console to test the smart contract:
     let instance = await ShipmentContract.deployed()
     await instance.createShipment(001,"0x26BFdAA8d340B879219727f036981FedaE947518","Dang gui","Sai Gon")
     await instance.getShipment(001)
+
+## 12. Run localhost Frontend
+
+- Move to frontend folder and run localhost server.
+
+<p align="center">
+
+![localhost](./public/11.png "localhost")
+<p align="center">
+Run Localhost
+</p>
+</p>

@@ -1,5 +1,5 @@
-const ShipmentContract = artifacts.require('ShipmentContract');
+const TDTcoin = artifacts.require('TDTcoin');
 
 module.exports = function (deployer){
-  deployer.deploy(ShipmentContract)
+  deployer.deploy(TDTcoin)
 }

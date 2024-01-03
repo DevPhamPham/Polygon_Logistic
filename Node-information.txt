@@ -66,9 +66,9 @@ Add/remove a validator:
   polygon-edge server --data-dir ./test-chain-5 --chain genesis.json --grpc-address :50000 --libp2p :50001 --jsonrpc :50002 --seal
 
 Network stress testing: in Node 1
- export LOADBOT_0x7DF1429E07b156E42d589f52B49b09c48854b375=220ab472576c149dc3efa6e3598096f9f753e2b8765e5ade21683dbc8840f978
+ export LOADBOT_0x4DF117d227396c294412A8269762B9605D4A1055=55d332773d68b090e3a909008c711d265eb7fbaf4028da663cd056f2a8262e4b
 
- polygon-edge loadbot --jsonrpc http://127.0.0.1:10002 --grpc-address 127.0.0.1:10000 --sender 0x7DF1429E07b156E42d589f52B49b09c48854b375 --count 2000 --value 0x100 --tps 100
+ polygon-edge loadbot --jsonrpc http://127.0.0.1:10002 --grpc-address 127.0.0.1:10000 --sender 0x4DF117d227396c294412A8269762B9605D4A1055 --count 2000 --value 0x100 --tps 100
 
 
 Test smart contract:
